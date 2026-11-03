@@ -1,0 +1,33 @@
+# === PHP & Web Server Logs ===
+.htaccess
+*.log
+error_log
+.DS_Store
+
+# === Composer (If using PHP dependencies) ===
+/vendor/
+
+# === IDEs and Text Editors ===
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# === MALWARE SAFETY OVERRIDES ===
+# Force git to completely ignore dangerous executable formats 
+# that the kit or exploit modules might attempt to drop or pull down.
+*.exe
+*.dll
+*.bin
+*.jar
+*.swf
+*.apk
+
+# === OPTIONAL: Dangerous Samples Folder ===
+# If you are storing active PHP decoder tools or raw malware samples for analysis,
+# it is safest to isolate them in a dedicated folder and block it entirely.
+/samples/
+/malware_payloads/
